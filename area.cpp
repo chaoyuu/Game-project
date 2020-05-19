@@ -8,7 +8,7 @@
 Area::Area()
 	: Game_Object("DIEING.Area","DIEING.Area")
 {
-	_width = 500;
+	_width = 200;
 	_height = 200;
 	_translation = Vector_2D(500, 400);
 }
