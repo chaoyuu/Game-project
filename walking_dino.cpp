@@ -1,4 +1,4 @@
-/*#pragma once
+#pragma once
 
 #include "walking_dino.h"
 
@@ -24,4 +24,4 @@ void Walking_Dino::render(Uint32 milliseconds_to_simulate, Assets* assets, SDL_R
 
 void Walking_Dino::simulate_AI(Uint32, Assets*, Input*,Scene*)
 {
-}*/
+}

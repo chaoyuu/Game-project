@@ -1,6 +1,6 @@
 #pragma once
 
-/*#include "portal_entry.h"
+#include "portal_entry.h"
 #include "scene.h"
 
 Portal_Entry::Portal_Entry()
@@ -43,4 +43,4 @@ void Portal_Entry::render(Uint32 milliseconds_to_simulate, Assets* assets, SDL_R
 	texture->update_frame(milliseconds_to_simulate);
 
 	Game_Object::render(milliseconds_to_simulate, assets, renderer, config,scene);
-}*/
+}
