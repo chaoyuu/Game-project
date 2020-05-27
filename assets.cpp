@@ -7,7 +7,7 @@
 
 Assets::Assets(SDL_Renderer* renderer)
 {
-	// Cache Dino Texture.
+	/*// Cache Dino Texture.
 	{
 		Texture* texture = new Texture("Texture.Dino", "Assets/dino.png", renderer);
 		_assets[texture->id()] = texture;
@@ -24,7 +24,7 @@ Assets::Assets(SDL_Renderer* renderer)
 			frame_count,
 			frame_duration_milliseconds);
 		_assets[texture->id()] = texture;
-	}
+	}*/
 
 	// Create player walking texture.
 	{
@@ -66,7 +66,7 @@ Assets::Assets(SDL_Renderer* renderer)
 		_assets[player_animated_texture->id()] = player_animated_texture;
 	}
 
-	// Create collider texture
+	/*// Create collider texture
 	{
 		Texture* texture = new Texture("Texture.Collider", "Assets/collider.png", renderer);
 		_assets[texture->id()] = texture;
@@ -80,11 +80,7 @@ Assets::Assets(SDL_Renderer* renderer)
 		Mix_PlayChannel(0, sound->data(), -1);
 	}
 
-	// Create walking sound
-	{
-		Sound* sound = new Sound("Sound.Walking", "Assets/walking.wav");
-		_assets[sound->id()] = sound;
-	}
+	
 
 	// Create running sound
 	{
@@ -127,6 +123,11 @@ Assets::Assets(SDL_Renderer* renderer)
 		Asset* animated_texture = new Animated_Texture("Texture.DIEING.Area", "Assets/DIEING.Area.png", renderer, frame_count, frame_duration_milliseconds);
 		_assets[animated_texture->id()] = animated_texture;
 		
+	}*/
+	// Create walking sound
+	{
+		Sound* sound = new Sound("Sound.Walking", "Assets/walking.wav");
+		_assets[sound->id()] = sound;
 	}
 
 }
